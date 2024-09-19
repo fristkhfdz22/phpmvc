@@ -33,7 +33,7 @@
                 <?php foreach ($data['mhs'] as $mhs) : ?>
                     <li class="list-group-item">
                         <?= htmlspecialchars($mhs['nama']); ?>
-                        <a href="<?= BASEURL; ?>/mahasiswa/detail/<?= htmlspecialchars($mhs['id']); ?>" class="badge bg-primary float-end ">Detail</a>
+                        <a href="<?= BASEURL; ?>/mahasiswa/detail/<?= htmlspecialchars($mhs['id']); ?>" class="badge bg-primary float-end " >Detail</a>
                         <a href="<?= BASEURL; ?>/mahasiswa/ubah/<?= htmlspecialchars($mhs['id']); ?>" class="badge bg-warning float-end tampilModalUbah"  data-bs-toggle="modal" data-bs-target="#exampleModal" data-id="<?=$mhs ['id']; ?>">ubah</a>
                         <a href="<?= BASEURL; ?>/mahasiswa/hapus/<?= htmlspecialchars($mhs['id']); ?>" class="badge bg-danger float-end " onclick="return confirm('yakin?');">Hapus</a>
                     </li>
@@ -42,6 +42,7 @@
         </div>
     </div>
 </div>
+
 
 <!-- Modal -->
 <!-- Modal -->
